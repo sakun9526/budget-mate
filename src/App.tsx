@@ -1,7 +1,17 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Table from "./components/Table";
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-red-400">Hello world!</h1>
+      <main className="flex flex-col h-screen">
+      <Header />
+      <div className="mt-10 grow">
+        <Table />
+      </div>
+      <Footer />
+      </main>
     </>
   );
 }
